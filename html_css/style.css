@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(235, 235, 235);
+}
+.container {
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 3px 1px rgba(56, 56, 56, 0.486);
+}
+
+.hero-section {
+    width: 70%;
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-position: center;
+
+} 
+
+.hero-section .hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero {
+    background-color: rgba(0, 0, 0, 0.486);
+    width: 100%;
+    color: rgb(245, 245, 245);
+}
+.hero h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.hero h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.form-section {
+    background-color: #fff;
+    padding: 20px;
+}
