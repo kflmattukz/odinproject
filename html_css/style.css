@@ -1,58 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-color: rgb(235, 235, 235);
+    font-family: "Inter" ,sans-serif;
+    background-color: #eee;
+    color: #222;
+    padding: 20px;
 }
+
 .container {
-    width: 80vw;
-    height: 90vh;
+    /* take heigh oh 93% of view heigh */
+    height: 93vh; 
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    margin: auto;
-    margin-top: 30px;
+    /* background-color: red; */
+    /* padding: 10px; */
     border-radius: 5px;
+    /* give overflow hidden to make border-radius visible to image */
     overflow: hidden;
-    box-shadow: 0 0 3px 1px rgba(56, 56, 56, 0.486);
+    /* box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8); */
+    /* strech items to empty space */
+    align-items: stretch;
 }
 
-.hero-section {
-    width: 70%;
+.left-side {
+    /* background-color: blue; */
+    /* flex-grow: 1; */
     position: relative;
-    text-align: center;
-    font-family: 'Roboto';
+    flex-basis: 40%;
 }
 
-.hero-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-position: center;
-    background-position: center;
-
-} 
-
-.hero-section .hero{
+.left-side .text-float {
+    text-align: center;
+    color: #ecf0f1;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hero {
-    background-color: rgba(0, 0, 0, 0.486);
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
-    color: rgb(245, 245, 245);
-}
-.hero h3 {
-    font-size: 1.5em;
-    font-weight: 400;
+    padding: 10px;
+    /* left: 0; */
+    /* z-index: 99; */
 }
 
-.hero h4 {
-    font-size: 20px;
+.left-side .text-float h2 {
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.left-side .text-float h3 {
     font-weight: 300;
+    letter-spacing: 3px;
+
 }
 
-.form-section {
-    background-color: #fff;
-    padding: 20px;
+.left-side img {
+    /* border-radius: 5px; */
+    /* overflow: hidden; */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
+
+.right-side {
+    background-color: green;
+    /* flex-grow: 2; */
+    flex-basis: 60%;
+
+}
+
