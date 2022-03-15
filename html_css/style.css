@@ -6,12 +6,13 @@
 body {
     font-family: "Inter" ,sans-serif;
     background-color: #eee;
-    color: #222;
+    color: #34495e;
     padding: 20px;
 }
 
 .container {
     /* take heigh oh 93% of view heigh */
+    background-color: #fff;
     height: 93vh; 
     display: flex;
     /* background-color: red; */
@@ -19,7 +20,7 @@ body {
     border-radius: 5px;
     /* give overflow hidden to make border-radius visible to image */
     overflow: hidden;
-    /* box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8); */
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8);
     /* strech items to empty space */
     align-items: stretch;
 }
@@ -64,9 +65,31 @@ body {
 }
 
 .right-side {
-    background-color: green;
+    /* background-color: green; */
     /* flex-grow: 2; */
+    padding: 20px;
     flex-basis: 60%;
 
 }
 
+.right-side .some-text p{
+    /* text-transform: capitalize; */
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.right-side form .name ,.right-side form .contact , .right-side form .pass{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 20px;
+}
+
+.right-side form .label {
+    text-transform: uppercase;
+}
+
+.first-name , .last-name , .email , .phone-number , .password , .confirm-password{
+    display: flex;
+    flex-flow: column;
+}
